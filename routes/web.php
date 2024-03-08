@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+//Demo
+Route::get('/products', [
+    ProductsController::class,
+    'index'
+]);
 
 // Tuan1
 
